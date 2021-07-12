@@ -1,0 +1,648 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD369AD326986BE2001584DD /* Bayes_BelieverApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD369AD226986BE2001584DD /* Bayes_BelieverApp.swift */; };
+		CD369AD726986BE3001584DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD369AD626986BE3001584DD /* Assets.xcassets */; };
+		CD369ADA26986BE3001584DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD369AD926986BE3001584DD /* Preview Assets.xcassets */; };
+		CD369ADC26986BE3001584DD /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD369ADB26986BE3001584DD /* Persistence.swift */; };
+		CD369ADF26986BE3001584DD /* Bayes_Believer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CD369ADD26986BE3001584DD /* Bayes_Believer.xcdatamodeld */; };
+		CD369AEA26986BE3001584DD /* Bayes_BelieverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD369AE926986BE3001584DD /* Bayes_BelieverTests.swift */; };
+		CD369AF526986BE3001584DD /* Bayes_BelieverUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD369AF426986BE3001584DD /* Bayes_BelieverUITests.swift */; };
+		CD369B0426986C17001584DD /* BeliefListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD369B0326986C17001584DD /* BeliefListView.swift */; };
+		CD369B0826989DDD001584DD /* AddBeliefView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD369B0726989DDD001584DD /* AddBeliefView.swift */; };
+		CD369B0B2698A136001584DD /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD369B0A2698A136001584DD /* Model.swift */; };
+		CD369B0E2698AB7A001584DD /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD369B0D2698AB7A001584DD /* ListViewModel.swift */; };
+		CD369B102698EEB3001584DD /* UpdateBeliefView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD369B0F2698EEB3001584DD /* UpdateBeliefView.swift */; };
+		CD8FCA69269B3CF7008329F2 /* BeliefView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8FCA68269B3CF7008329F2 /* BeliefView.swift */; };
+		CD8FCA6B269B3E58008329F2 /* BeliefBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8FCA6A269B3E58008329F2 /* BeliefBar.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD369AE626986BE3001584DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD369AC726986BE2001584DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD369ACE26986BE2001584DD;
+			remoteInfo = "Bayes Believer";
+		};
+		CD369AF126986BE3001584DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD369AC726986BE2001584DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD369ACE26986BE2001584DD;
+			remoteInfo = "Bayes Believer";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD369ACF26986BE2001584DD /* Bayes Believer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bayes Believer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD369AD226986BE2001584DD /* Bayes_BelieverApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bayes_BelieverApp.swift; sourceTree = "<group>"; };
+		CD369AD626986BE3001584DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD369AD926986BE3001584DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CD369ADB26986BE3001584DD /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		CD369ADE26986BE3001584DD /* Bayes_Believer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bayes_Believer.xcdatamodel; sourceTree = "<group>"; };
+		CD369AE026986BE3001584DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD369AE526986BE3001584DD /* Bayes BelieverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bayes BelieverTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD369AE926986BE3001584DD /* Bayes_BelieverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bayes_BelieverTests.swift; sourceTree = "<group>"; };
+		CD369AEB26986BE3001584DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD369AF026986BE3001584DD /* Bayes BelieverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bayes BelieverUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD369AF426986BE3001584DD /* Bayes_BelieverUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bayes_BelieverUITests.swift; sourceTree = "<group>"; };
+		CD369AF626986BE3001584DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD369B0326986C17001584DD /* BeliefListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeliefListView.swift; sourceTree = "<group>"; };
+		CD369B0726989DDD001584DD /* AddBeliefView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBeliefView.swift; sourceTree = "<group>"; };
+		CD369B0A2698A136001584DD /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		CD369B0D2698AB7A001584DD /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		CD369B0F2698EEB3001584DD /* UpdateBeliefView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateBeliefView.swift; sourceTree = "<group>"; };
+		CD8FCA68269B3CF7008329F2 /* BeliefView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeliefView.swift; sourceTree = "<group>"; };
+		CD8FCA6A269B3E58008329F2 /* BeliefBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeliefBar.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD369ACC26986BE2001584DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD369AE226986BE3001584DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD369AED26986BE3001584DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD369AC626986BE2001584DD = {
+			isa = PBXGroup;
+			children = (
+				CD369AD126986BE2001584DD /* Bayes Believer */,
+				CD369AE826986BE3001584DD /* Bayes BelieverTests */,
+				CD369AF326986BE3001584DD /* Bayes BelieverUITests */,
+				CD369AD026986BE2001584DD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD369AD026986BE2001584DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD369ACF26986BE2001584DD /* Bayes Believer.app */,
+				CD369AE526986BE3001584DD /* Bayes BelieverTests.xctest */,
+				CD369AF026986BE3001584DD /* Bayes BelieverUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD369AD126986BE2001584DD /* Bayes Believer */ = {
+			isa = PBXGroup;
+			children = (
+				CD369AD226986BE2001584DD /* Bayes_BelieverApp.swift */,
+				CD369B092698A128001584DD /* Models */,
+				CD369B0C2698AB5F001584DD /* ViewModels */,
+				CD369B0226986BF8001584DD /* Views */,
+				CD369AD626986BE3001584DD /* Assets.xcassets */,
+				CD369ADB26986BE3001584DD /* Persistence.swift */,
+				CD369AE026986BE3001584DD /* Info.plist */,
+				CD369ADD26986BE3001584DD /* Bayes_Believer.xcdatamodeld */,
+				CD369AD826986BE3001584DD /* Preview Content */,
+			);
+			path = "Bayes Believer";
+			sourceTree = "<group>";
+		};
+		CD369AD826986BE3001584DD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CD369AD926986BE3001584DD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CD369AE826986BE3001584DD /* Bayes BelieverTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD369AE926986BE3001584DD /* Bayes_BelieverTests.swift */,
+				CD369AEB26986BE3001584DD /* Info.plist */,
+			);
+			path = "Bayes BelieverTests";
+			sourceTree = "<group>";
+		};
+		CD369AF326986BE3001584DD /* Bayes BelieverUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CD369AF426986BE3001584DD /* Bayes_BelieverUITests.swift */,
+				CD369AF626986BE3001584DD /* Info.plist */,
+			);
+			path = "Bayes BelieverUITests";
+			sourceTree = "<group>";
+		};
+		CD369B0226986BF8001584DD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CD8FCA68269B3CF7008329F2 /* BeliefView.swift */,
+				CD369B0326986C17001584DD /* BeliefListView.swift */,
+				CD369B0726989DDD001584DD /* AddBeliefView.swift */,
+				CD369B0F2698EEB3001584DD /* UpdateBeliefView.swift */,
+				CD8FCA6A269B3E58008329F2 /* BeliefBar.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CD369B092698A128001584DD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CD369B0A2698A136001584DD /* Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CD369B0C2698AB5F001584DD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CD369B0D2698AB7A001584DD /* ListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD369ACE26986BE2001584DD /* Bayes Believer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD369AF926986BE3001584DD /* Build configuration list for PBXNativeTarget "Bayes Believer" */;
+			buildPhases = (
+				CD369ACB26986BE2001584DD /* Sources */,
+				CD369ACC26986BE2001584DD /* Frameworks */,
+				CD369ACD26986BE2001584DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bayes Believer";
+			productName = "Bayes Believer";
+			productReference = CD369ACF26986BE2001584DD /* Bayes Believer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD369AE426986BE3001584DD /* Bayes BelieverTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD369AFC26986BE3001584DD /* Build configuration list for PBXNativeTarget "Bayes BelieverTests" */;
+			buildPhases = (
+				CD369AE126986BE3001584DD /* Sources */,
+				CD369AE226986BE3001584DD /* Frameworks */,
+				CD369AE326986BE3001584DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD369AE726986BE3001584DD /* PBXTargetDependency */,
+			);
+			name = "Bayes BelieverTests";
+			productName = "Bayes BelieverTests";
+			productReference = CD369AE526986BE3001584DD /* Bayes BelieverTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CD369AEF26986BE3001584DD /* Bayes BelieverUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD369AFF26986BE3001584DD /* Build configuration list for PBXNativeTarget "Bayes BelieverUITests" */;
+			buildPhases = (
+				CD369AEC26986BE3001584DD /* Sources */,
+				CD369AED26986BE3001584DD /* Frameworks */,
+				CD369AEE26986BE3001584DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD369AF226986BE3001584DD /* PBXTargetDependency */,
+			);
+			name = "Bayes BelieverUITests";
+			productName = "Bayes BelieverUITests";
+			productReference = CD369AF026986BE3001584DD /* Bayes BelieverUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD369AC726986BE2001584DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					CD369ACE26986BE2001584DD = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					CD369AE426986BE3001584DD = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = CD369ACE26986BE2001584DD;
+					};
+					CD369AEF26986BE3001584DD = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = CD369ACE26986BE2001584DD;
+					};
+				};
+			};
+			buildConfigurationList = CD369ACA26986BE2001584DD /* Build configuration list for PBXProject "Bayes Believer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD369AC626986BE2001584DD;
+			productRefGroup = CD369AD026986BE2001584DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD369ACE26986BE2001584DD /* Bayes Believer */,
+				CD369AE426986BE3001584DD /* Bayes BelieverTests */,
+				CD369AEF26986BE3001584DD /* Bayes BelieverUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD369ACD26986BE2001584DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD369ADA26986BE3001584DD /* Preview Assets.xcassets in Resources */,
+				CD369AD726986BE3001584DD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD369AE326986BE3001584DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD369AEE26986BE3001584DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD369ACB26986BE2001584DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD369B0B2698A136001584DD /* Model.swift in Sources */,
+				CD369B0426986C17001584DD /* BeliefListView.swift in Sources */,
+				CD8FCA6B269B3E58008329F2 /* BeliefBar.swift in Sources */,
+				CD369ADF26986BE3001584DD /* Bayes_Believer.xcdatamodeld in Sources */,
+				CD8FCA69269B3CF7008329F2 /* BeliefView.swift in Sources */,
+				CD369B0826989DDD001584DD /* AddBeliefView.swift in Sources */,
+				CD369ADC26986BE3001584DD /* Persistence.swift in Sources */,
+				CD369B102698EEB3001584DD /* UpdateBeliefView.swift in Sources */,
+				CD369B0E2698AB7A001584DD /* ListViewModel.swift in Sources */,
+				CD369AD326986BE2001584DD /* Bayes_BelieverApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD369AE126986BE3001584DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD369AEA26986BE3001584DD /* Bayes_BelieverTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD369AEC26986BE3001584DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD369AF526986BE3001584DD /* Bayes_BelieverUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD369AE726986BE3001584DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD369ACE26986BE2001584DD /* Bayes Believer */;
+			targetProxy = CD369AE626986BE3001584DD /* PBXContainerItemProxy */;
+		};
+		CD369AF226986BE3001584DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD369ACE26986BE2001584DD /* Bayes Believer */;
+			targetProxy = CD369AF126986BE3001584DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CD369AF726986BE3001584DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CD369AF826986BE3001584DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD369AFA26986BE3001584DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Bayes Believer/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Bayes Believer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.mo42.Bayes-Believer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD369AFB26986BE3001584DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Bayes Believer/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Bayes Believer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.mo42.Bayes-Believer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CD369AFD26986BE3001584DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Bayes BelieverTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.mo42.Bayes-BelieverTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bayes Believer.app/Bayes Believer";
+			};
+			name = Debug;
+		};
+		CD369AFE26986BE3001584DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Bayes BelieverTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.mo42.Bayes-BelieverTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bayes Believer.app/Bayes Believer";
+			};
+			name = Release;
+		};
+		CD369B0026986BE3001584DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Bayes BelieverUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.mo42.Bayes-BelieverUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Bayes Believer";
+			};
+			name = Debug;
+		};
+		CD369B0126986BE3001584DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Bayes BelieverUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.mo42.Bayes-BelieverUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Bayes Believer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD369ACA26986BE2001584DD /* Build configuration list for PBXProject "Bayes Believer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD369AF726986BE3001584DD /* Debug */,
+				CD369AF826986BE3001584DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD369AF926986BE3001584DD /* Build configuration list for PBXNativeTarget "Bayes Believer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD369AFA26986BE3001584DD /* Debug */,
+				CD369AFB26986BE3001584DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD369AFC26986BE3001584DD /* Build configuration list for PBXNativeTarget "Bayes BelieverTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD369AFD26986BE3001584DD /* Debug */,
+				CD369AFE26986BE3001584DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD369AFF26986BE3001584DD /* Build configuration list for PBXNativeTarget "Bayes BelieverUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD369B0026986BE3001584DD /* Debug */,
+				CD369B0126986BE3001584DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CD369ADD26986BE3001584DD /* Bayes_Believer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CD369ADE26986BE3001584DD /* Bayes_Believer.xcdatamodel */,
+			);
+			currentVersion = CD369ADE26986BE3001584DD /* Bayes_Believer.xcdatamodel */;
+			path = Bayes_Believer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CD369AC726986BE2001584DD /* Project object */;
+}
