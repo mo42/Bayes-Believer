@@ -14,5 +14,5 @@ It describes the probability of observing the data given some belief.
 For example, suppose a medical condition is already confirmed.
 What is the probability that a test detects it?
 
-When updating our belief the likelihood function needs to be set according to the type of observations (e.g., each medical test has its own likelihood function).
-This app tires to provide an intuitive user interface for updating beliefs.
+When updating our belief, we need to set the likelihood function according to the type of observations (e.g., each medical test has its own likelihood function).
+This app tries to provide an intuitive user interface for updating beliefs.
