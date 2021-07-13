@@ -15,6 +15,5 @@ struct BeliefBar: View {
       RoundedRectangle(cornerRadius: 5)
           .fill(color)
           .scaleEffect(CGSize(width: 1, height: height), anchor: .bottom)
-              
   }
 }
