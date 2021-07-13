@@ -16,6 +16,8 @@ struct AddBeliefView: View {
   @State private var prior: Float = 0.5
   @State private var isEditing = false
   
+  let formatter = createFormatter()
+  
   var body: some View {
     ScrollView {
       VStack {
@@ -28,10 +30,10 @@ struct AddBeliefView: View {
         Divider()
         Text("How likely is this belief true?")
         HStack {
-          TextField("", value: $prior, formatter: NumberFormatter())
+          TextField("", value: $prior, formatter: formatter)
             .keyboardType(UIKeyboardType.decimalPad)
             .padding(.horizontal)
-            .frame(width: 55, height: 55)
+            .frame(width: 70, height: 55)
             .background(Color(#colorLiteral(red: 0.921431005, green: 0.9214526415, blue: 0.9214410186, alpha: 1)))
             .cornerRadius(10)
           Slider(value: $prior,

@@ -27,8 +27,4 @@ class ListViewModel: ObservableObject {
   func addBelief(description: String, prior: Float) {
     beliefs.append(Belief(description: description, prior: prior, observationTrueLikelihood: 0.0, observationFalseLikelihood: 0.0))
   }
-  
-  func updateBelief(observation: Bool) {
-    
-  }
 }
