@@ -31,7 +31,7 @@ struct ListView_Previews: PreviewProvider {
   static var previews: some View {
     NavigationView {
       BeliefListView()
-    }
-    .environmentObject(ListViewModel())
+      }
+      .environmentObject(ListViewModel())
   }
 }

@@ -19,8 +19,8 @@
 		CD369B0B2698A136001584DD /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD369B0A2698A136001584DD /* Model.swift */; };
 		CD369B0E2698AB7A001584DD /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD369B0D2698AB7A001584DD /* ListViewModel.swift */; };
 		CD369B102698EEB3001584DD /* UpdateBeliefView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD369B0F2698EEB3001584DD /* UpdateBeliefView.swift */; };
+		CD7E7006269E35C100DB0B83 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7E7005269E35C100DB0B83 /* Utils.swift */; };
 		CD8FCA69269B3CF7008329F2 /* BeliefView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8FCA68269B3CF7008329F2 /* BeliefView.swift */; };
-		CD8FCA6B269B3E58008329F2 /* BeliefBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8FCA6A269B3E58008329F2 /* BeliefBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,8 +59,8 @@
 		CD369B0A2698A136001584DD /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		CD369B0D2698AB7A001584DD /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		CD369B0F2698EEB3001584DD /* UpdateBeliefView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateBeliefView.swift; sourceTree = "<group>"; };
+		CD7E7005269E35C100DB0B83 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		CD8FCA68269B3CF7008329F2 /* BeliefView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeliefView.swift; sourceTree = "<group>"; };
-		CD8FCA6A269B3E58008329F2 /* BeliefBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeliefBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,9 +111,10 @@
 		CD369AD126986BE2001584DD /* Bayes Believer */ = {
 			isa = PBXGroup;
 			children = (
+				CD7E7005269E35C100DB0B83 /* Utils.swift */,
 				CD369AD226986BE2001584DD /* Bayes_BelieverApp.swift */,
-				CD369B092698A128001584DD /* Models */,
-				CD369B0C2698AB5F001584DD /* ViewModels */,
+				CD369B0A2698A136001584DD /* Model.swift */,
+				CD369B0D2698AB7A001584DD /* ListViewModel.swift */,
 				CD369B0226986BF8001584DD /* Views */,
 				CD369AD626986BE3001584DD /* Assets.xcassets */,
 				CD369ADB26986BE3001584DD /* Persistence.swift */,
@@ -157,25 +158,8 @@
 				CD369B0326986C17001584DD /* BeliefListView.swift */,
 				CD369B0726989DDD001584DD /* AddBeliefView.swift */,
 				CD369B0F2698EEB3001584DD /* UpdateBeliefView.swift */,
-				CD8FCA6A269B3E58008329F2 /* BeliefBar.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		CD369B092698A128001584DD /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				CD369B0A2698A136001584DD /* Model.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		CD369B0C2698AB5F001584DD /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				CD369B0D2698AB7A001584DD /* ListViewModel.swift */,
-			);
-			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,7 +293,6 @@
 			files = (
 				CD369B0B2698A136001584DD /* Model.swift in Sources */,
 				CD369B0426986C17001584DD /* BeliefListView.swift in Sources */,
-				CD8FCA6B269B3E58008329F2 /* BeliefBar.swift in Sources */,
 				CD369ADF26986BE3001584DD /* Bayes_Believer.xcdatamodeld in Sources */,
 				CD8FCA69269B3CF7008329F2 /* BeliefView.swift in Sources */,
 				CD369B0826989DDD001584DD /* AddBeliefView.swift in Sources */,
@@ -317,6 +300,7 @@
 				CD369B102698EEB3001584DD /* UpdateBeliefView.swift in Sources */,
 				CD369B0E2698AB7A001584DD /* ListViewModel.swift in Sources */,
 				CD369AD326986BE2001584DD /* Bayes_BelieverApp.swift in Sources */,
+				CD7E7006269E35C100DB0B83 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +459,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Bayes Believer/Preview Content\"";
+				DEVELOPMENT_TEAM = DYFCYX7MTN;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Bayes Believer/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -496,6 +481,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Bayes Believer/Preview Content\"";
+				DEVELOPMENT_TEAM = DYFCYX7MTN;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Bayes Believer/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
