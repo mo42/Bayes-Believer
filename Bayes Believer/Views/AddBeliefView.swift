@@ -58,7 +58,8 @@ struct AddBeliefView: View {
   }
   
   func saveButtonPressed() {
-    listViewModel.addBelief(description: textFieldText, prior: prior)
+    let belief = Belief(description: textFieldText, prior: prior)
+    listViewModel.addBelief(belief: belief)
     presentationMode.wrappedValue.dismiss()
   }
 }
