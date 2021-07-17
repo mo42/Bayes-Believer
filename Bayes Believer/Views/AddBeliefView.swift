@@ -24,7 +24,7 @@ struct AddBeliefView: View {
         TextField("Description of belief...", text: $textFieldText)
           .padding(.horizontal)
           .frame(height: 55)
-          .background(Color(#colorLiteral(red: 0.921431005, green: 0.9214526415, blue: 0.9214410186, alpha: 1)))
+          .background(Color(UIColor.systemGray5))
           .cornerRadius(10)
           .lineLimit(nil)
         Divider()
@@ -34,7 +34,7 @@ struct AddBeliefView: View {
             .keyboardType(UIKeyboardType.decimalPad)
             .padding(.horizontal)
             .frame(width: 70, height: 55)
-            .background(Color(#colorLiteral(red: 0.921431005, green: 0.9214526415, blue: 0.9214410186, alpha: 1)))
+            .background(Color(UIColor.systemGray5))
             .cornerRadius(10)
           Slider(value: $prior,
                  in: 0.0...1.0,
