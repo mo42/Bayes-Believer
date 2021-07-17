@@ -32,6 +32,7 @@ struct ListView_Previews: PreviewProvider {
     NavigationView {
       BeliefListView()
       }
+      .preferredColorScheme(.dark)
       .environmentObject(ListViewModel())
   }
 }

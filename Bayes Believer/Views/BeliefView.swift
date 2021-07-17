@@ -25,20 +25,19 @@ struct BeliefItem: View {
   var body: some View {
     HStack(alignment: .lastTextBaseline) {
       Image(systemName: "circle.fill")
-        .foregroundColor(.blue)
+        .foregroundColor(Color(UIColor.systemBlue))
         .onTapGesture {
           let updatedBelief = belief.updateBelief(observation: true)
           listViewModel.updateBelief(belief: updatedBelief)
         }
       Image(systemName: "circle.fill")
-        .foregroundColor(.red)
+        .foregroundColor(Color(UIColor.systemRed))
         .onTapGesture {
           let updatedBelief = belief.updateBelief(observation: false)
           listViewModel.updateBelief(belief: updatedBelief)
         }
       Text("\(belief.prior, specifier: "%.2f")")
         Text(belief.description)
-          .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
           .lineLimit(1)
     }
   }
