@@ -4,7 +4,7 @@ An iOS app that supports Bayesian thinking
 Screenshot with *random* degrees of beliefs:
 <img style="height:20%;" src="screen.png">
 
-## White Paper
+## Formal Background
 
 Bayes' theorem describes how to infer beliefs based on observations and their likelihood (the rest is commentary 😉):
 
