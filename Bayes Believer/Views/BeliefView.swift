@@ -13,7 +13,6 @@ struct BeliefView: View {
   var body: some View {
     NavigationLink(destination: BeliefUpdateView(belief: belief)) {
       BeliefItem(belief: belief)
-      Spacer()
     }
   }
 }
@@ -23,7 +22,7 @@ struct BeliefItem: View {
   @EnvironmentObject var listViewModel: ListViewModel
   
   var body: some View {
-    HStack(alignment: .lastTextBaseline) {
+    HStack {
       Image(systemName: "circle.fill")
         .foregroundColor(Color(UIColor.systemBlue))
         .onTapGesture {
@@ -37,8 +36,9 @@ struct BeliefItem: View {
           listViewModel.updateBelief(belief: updatedBelief)
         }
       Text("\(belief.prior, specifier: "%.2f")")
-        Text(belief.description)
-          .lineLimit(1)
+      Text(belief.description)
+        .lineLimit(1)
+        .border(Color.red)
     }
   }
 }
