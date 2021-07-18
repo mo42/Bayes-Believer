@@ -1,18 +1,26 @@
 # Bayes-Believer
 An iOS app that supports Bayesian thinking
 
+Screenshot with *random* degrees of beliefs:
+<img style="height:100%;" src="screen.png">
+
 ## White Paper
 
-Bayes' theorem describes how to infer beliefs based on observations and their likelihood:
+Bayes' theorem describes how to infer beliefs based on observations and their likelihood (the rest is commentary 😉):
 
-<img style="height:150%;" src="https://render.githubusercontent.com/render/math?math=P(B|D)=\frac{P(D|B)P(B)}{P(D)}">,
+<img style="height:150%;" src="bayes.svg">
 
 where B is the belief and D is the observational data.
-The likelihood function:
-<img style="height:150%;" src="https://render.githubusercontent.com/render/math?math=P(D|B)"> is the unintuitive part of Bayes' theorem.
-It describes the probability of observing the data given some belief.
-For example, suppose a medical condition is already confirmed.
-What is the probability that a test detects it?
 
-When updating our belief, we need to set the likelihood function according to the type of observations (e.g., each medical test has its own likelihood function).
-This app tries to provide an intuitive user interface for updating beliefs.
+This app is supposed to update beliefs iteratively.
+There could be supporting observations several times and with varying true positive rates.
+Therefore, we make beliefs time-dependent:
+
+<img style="height:150%;" src="bayes_times.svg">
+
+However, this allows only supporting observations.
+To also support opposing observations, we use this formula:
+
+<img style="height:150%;" src="bayes_neg.svg">
+
+With both derivations, the app can generate a sequence of (refined) beliefs.
