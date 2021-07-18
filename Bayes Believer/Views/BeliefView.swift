@@ -38,7 +38,6 @@ struct BeliefItem: View {
       Text("\(belief.prior, specifier: "%.2f")")
       Text(belief.description)
         .lineLimit(1)
-        .border(Color.red)
     }
   }
 }
