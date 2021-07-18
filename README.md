@@ -2,7 +2,7 @@
 An iOS app that supports Bayesian thinking
 
 Screenshot with *random* degrees of beliefs:
-<img style="height:100%;" src="screen.png">
+<img style="height:20%;" src="screen.png">
 
 ## White Paper
 
@@ -16,7 +16,7 @@ This app is supposed to update beliefs iteratively.
 There could be supporting observations several times and with varying true positive rates.
 Therefore, we make beliefs time-dependent:
 
-<img style="height:150%;" src="bayes_times.svg">
+<img style="height:150%;" src="bayes_time.svg">
 
 However, this allows only supporting observations.
 To also support opposing observations, we use this formula:
