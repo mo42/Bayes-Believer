@@ -9,7 +9,6 @@ import SwiftUI
 
 @main
 struct Bayes_BelieverApp: App {
-    let persistenceController = PersistenceController.shared
 
     @StateObject var listViewModel: ListViewModel = ListViewModel()
     

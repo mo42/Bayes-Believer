@@ -9,11 +9,6 @@
 /* Begin PBXBuildFile section */
 		CD369AD326986BE2001584DD /* Bayes_BelieverApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD369AD226986BE2001584DD /* Bayes_BelieverApp.swift */; };
 		CD369AD726986BE3001584DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD369AD626986BE3001584DD /* Assets.xcassets */; };
-		CD369ADA26986BE3001584DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD369AD926986BE3001584DD /* Preview Assets.xcassets */; };
-		CD369ADC26986BE3001584DD /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD369ADB26986BE3001584DD /* Persistence.swift */; };
-		CD369ADF26986BE3001584DD /* Bayes_Believer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CD369ADD26986BE3001584DD /* Bayes_Believer.xcdatamodeld */; };
-		CD369AEA26986BE3001584DD /* Bayes_BelieverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD369AE926986BE3001584DD /* Bayes_BelieverTests.swift */; };
-		CD369AF526986BE3001584DD /* Bayes_BelieverUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD369AF426986BE3001584DD /* Bayes_BelieverUITests.swift */; };
 		CD369B0426986C17001584DD /* BeliefListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD369B0326986C17001584DD /* BeliefListView.swift */; };
 		CD369B0826989DDD001584DD /* AddBeliefView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD369B0726989DDD001584DD /* AddBeliefView.swift */; };
 		CD369B0B2698A136001584DD /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD369B0A2698A136001584DD /* Model.swift */; };
@@ -44,16 +39,9 @@
 		CD369ACF26986BE2001584DD /* Bayes Believer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bayes Believer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD369AD226986BE2001584DD /* Bayes_BelieverApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bayes_BelieverApp.swift; sourceTree = "<group>"; };
 		CD369AD626986BE3001584DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CD369AD926986BE3001584DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		CD369ADB26986BE3001584DD /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		CD369ADE26986BE3001584DD /* Bayes_Believer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bayes_Believer.xcdatamodel; sourceTree = "<group>"; };
 		CD369AE026986BE3001584DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD369AE526986BE3001584DD /* Bayes BelieverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bayes BelieverTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD369AE926986BE3001584DD /* Bayes_BelieverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bayes_BelieverTests.swift; sourceTree = "<group>"; };
-		CD369AEB26986BE3001584DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD369AF026986BE3001584DD /* Bayes BelieverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bayes BelieverUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD369AF426986BE3001584DD /* Bayes_BelieverUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bayes_BelieverUITests.swift; sourceTree = "<group>"; };
-		CD369AF626986BE3001584DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD369B0326986C17001584DD /* BeliefListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeliefListView.swift; sourceTree = "<group>"; };
 		CD369B0726989DDD001584DD /* AddBeliefView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBeliefView.swift; sourceTree = "<group>"; };
 		CD369B0A2698A136001584DD /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
@@ -92,8 +80,6 @@
 			isa = PBXGroup;
 			children = (
 				CD369AD126986BE2001584DD /* Bayes Believer */,
-				CD369AE826986BE3001584DD /* Bayes BelieverTests */,
-				CD369AF326986BE3001584DD /* Bayes BelieverUITests */,
 				CD369AD026986BE2001584DD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -117,38 +103,9 @@
 				CD369B0D2698AB7A001584DD /* ListViewModel.swift */,
 				CD369B0226986BF8001584DD /* Views */,
 				CD369AD626986BE3001584DD /* Assets.xcassets */,
-				CD369ADB26986BE3001584DD /* Persistence.swift */,
 				CD369AE026986BE3001584DD /* Info.plist */,
-				CD369ADD26986BE3001584DD /* Bayes_Believer.xcdatamodeld */,
-				CD369AD826986BE3001584DD /* Preview Content */,
 			);
 			path = "Bayes Believer";
-			sourceTree = "<group>";
-		};
-		CD369AD826986BE3001584DD /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				CD369AD926986BE3001584DD /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		CD369AE826986BE3001584DD /* Bayes BelieverTests */ = {
-			isa = PBXGroup;
-			children = (
-				CD369AE926986BE3001584DD /* Bayes_BelieverTests.swift */,
-				CD369AEB26986BE3001584DD /* Info.plist */,
-			);
-			path = "Bayes BelieverTests";
-			sourceTree = "<group>";
-		};
-		CD369AF326986BE3001584DD /* Bayes BelieverUITests */ = {
-			isa = PBXGroup;
-			children = (
-				CD369AF426986BE3001584DD /* Bayes_BelieverUITests.swift */,
-				CD369AF626986BE3001584DD /* Info.plist */,
-			);
-			path = "Bayes BelieverUITests";
 			sourceTree = "<group>";
 		};
 		CD369B0226986BF8001584DD /* Views */ = {
@@ -265,7 +222,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD369ADA26986BE3001584DD /* Preview Assets.xcassets in Resources */,
 				CD369AD726986BE3001584DD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,10 +249,8 @@
 			files = (
 				CD369B0B2698A136001584DD /* Model.swift in Sources */,
 				CD369B0426986C17001584DD /* BeliefListView.swift in Sources */,
-				CD369ADF26986BE3001584DD /* Bayes_Believer.xcdatamodeld in Sources */,
 				CD8FCA69269B3CF7008329F2 /* BeliefView.swift in Sources */,
 				CD369B0826989DDD001584DD /* AddBeliefView.swift in Sources */,
-				CD369ADC26986BE3001584DD /* Persistence.swift in Sources */,
 				CD369B102698EEB3001584DD /* UpdateBeliefView.swift in Sources */,
 				CD369B0E2698AB7A001584DD /* ListViewModel.swift in Sources */,
 				CD369AD326986BE2001584DD /* Bayes_BelieverApp.swift in Sources */,
@@ -308,7 +262,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD369AEA26986BE3001584DD /* Bayes_BelieverTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,7 +269,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD369AF526986BE3001584DD /* Bayes_BelieverUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -616,19 +568,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		CD369ADD26986BE3001584DD /* Bayes_Believer.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				CD369ADE26986BE3001584DD /* Bayes_Believer.xcdatamodel */,
-			);
-			currentVersion = CD369ADE26986BE3001584DD /* Bayes_Believer.xcdatamodel */;
-			path = Bayes_Believer.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = CD369AC726986BE2001584DD /* Project object */;
 }

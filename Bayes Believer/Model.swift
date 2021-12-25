@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Belief: Identifiable {
+struct Belief: Identifiable, Codable {
   let id: String
   let description: String
   // base rate
