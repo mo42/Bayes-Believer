@@ -26,13 +26,3 @@ struct BeliefListView: View {
       trailing: NavigationLink("Add", destination: AddBeliefView()))
   }
 }
-
-struct ListView_Previews: PreviewProvider {
-  static var previews: some View {
-    NavigationView {
-      BeliefListView()
-      }
-      .preferredColorScheme(.dark)
-      .environmentObject(ListViewModel())
-  }
-}

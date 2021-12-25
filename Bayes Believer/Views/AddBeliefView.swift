@@ -63,12 +63,3 @@ struct AddBeliefView: View {
     presentationMode.wrappedValue.dismiss()
   }
 }
-
-struct AddBelief_Previews: PreviewProvider {
-  static var previews: some View {
-    NavigationView {
-      AddBeliefView()
-    }
-    .environmentObject(ListViewModel())
-  }
-}
