@@ -25,4 +25,3 @@ func bayes(observation: Bool, belief: Belief) -> Float {
     return numerator / denominator
   }
 }
-

@@ -83,4 +83,3 @@ struct BeliefUpdateView: View {
     }
   }
 }
-
