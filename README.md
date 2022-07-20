@@ -16,11 +16,11 @@ This app is supposed to update beliefs iteratively.
 There could be supporting observations several times and with varying true positive rates.
 Therefore, we make beliefs time-dependent:
 
-$P(B_{t+1} | D) = \frac{P(D | B_t) \cdot P(B_t | D)}{P(D)}$
+$P(B_{t+1} | D) = \frac{P(D | B_t) \cdot P(B_t | D)}{P(D)}$.
 
 However, this allows only supporting observations.
 To also support opposing observations, we use this formula:
 
-$P(B_{t+1} | \neg D) = \frac{P(\neg D | B_t) \cdot P(B_t | \neg D)}{P(\neg D)}$
+$P(B_{t+1} | \neg D) = \frac{P(\neg D | B_t) \cdot P(B_t | \neg D)}{P(\neg D)}$.
 
 With both derivations, the app can generate a sequence of (refined) beliefs.
