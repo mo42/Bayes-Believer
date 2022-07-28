@@ -63,13 +63,21 @@ struct BeliefUpdateView: View {
         .multilineTextAlignment(.center)
       Divider()
       if (observation) {
-        Text("Suppose this is true, how likely is it to observe the evidence?")
-          .multilineTextAlignment(.leading)
-          .padding(0.0)
+        HStack {
+          Image(systemName: "circle.fill")
+            .foregroundColor(Color(UIColor.systemBlue))
+          Text("Suppose this is true, how likely is it to observe the evidence?")
+            .multilineTextAlignment(.leading)
+            .padding(0.0)
+        }
       } else {
-        Text("Suppose this is false, how likely is it to observe the evidence?")
-          .multilineTextAlignment(.leading)
-          .padding(0.0)
+        HStack {
+          Image(systemName: "circle.fill")
+            .foregroundColor(Color(UIColor.systemRed))
+          Text("Suppose this is false, how likely is it to observe the evidence?")
+            .multilineTextAlignment(.leading)
+            .padding(0.0)
+          }
       }
       HStack {
         TextField("", value: binding, formatter: formatter)
