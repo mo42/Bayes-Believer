@@ -2,7 +2,7 @@
 An iOS app that supports Bayesian thinking
 
 Screenshot with *random* degrees of beliefs:
-![Screenshot](screen.png)
+![add belief](add.png "Add Belief") ![list beliefs](list.png "List Beliefs") ![edit belief](edit.png "Edit Belief")
 
 ## Formal Background
 
