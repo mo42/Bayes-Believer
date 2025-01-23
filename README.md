@@ -5,7 +5,10 @@ An iOS app that supports Bayesian thinking
 
 ## Motivation
 
-While I was reading [The Scount Mindset](https://www.penguinrandomhouse.com/books/555240/the-scout-mindset-by-julia-galef/), I had the idea for an app that supports Bayesian thinking. The app lets you organize a couple of believes that you can update on new pieces of information.
+While I was reading [The Scout
+Mindset](https://www.penguinrandomhouse.com/books/555240/the-scout-mindset-by-julia-galef/),
+I had the idea for an app that supports Bayesian thinking. The app lets you
+organize a couple of believes that you can update on new pieces of information.
 
 ## Installation
 
@@ -18,9 +21,8 @@ cd Bayes-Believer
 open Bayes Believer.xcodeproj
 ```
 
-Details in Xcode might change. Usually, it involves selecting a simulator or an actual iOS device and then hitting the ▶ button.
-
-
+Details in Xcode might change. Usually, it involves selecting a simulator or an
+actual iOS device and then hitting the ▶ button.
 
 ## Formal Background
 
